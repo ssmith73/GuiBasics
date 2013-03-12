@@ -30,20 +30,28 @@ public class JFrameTest1 {
 
 }
 */
+import java.awt.Dimension;
+import java.awt.Rectangle;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
 
 public class JFrameTest1 {
     private static void constructGUI() {
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame();
+        Rectangle rect = new Rectangle(250,70);
+        Dimension myDim = new Dimension(300,55);
         frame.setTitle("My First Swing Application");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // add a JLabel that says Welcome
         JLabel label = new JLabel("Welcome");
         frame.add(label);
+        frame.setBounds(rect);
+        frame.setSize(200, 220);
+        frame.setMinimumSize(myDim); //force a minimum size to fix problem
+       
         frame.pack();
         frame.setVisible(true);
     }
