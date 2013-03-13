@@ -27,8 +27,12 @@ class MyFrame extends JFrame  {
 		this.add(new JLabel("First Name:")); 	//r1_c1
 		this.add(new JTextField()); 		  	//r1_c2
 		this.add(new JLabel("Last Name:"));  	//r2_c1
+		JButton myButton = new JButton("Register");
 		this.add(new JTextField()); 			//r2_c2
-		this.add(new JButton("Register")); 	//r3
+		//this.add(new JButton("Register")); 	//r3
+		this.add(myButton);
+		myButton.setToolTipText("Some toolTip this is!");
+		
 
 		int frameWidth = 200;
 		int frameHeight = 100;
