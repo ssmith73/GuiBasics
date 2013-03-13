@@ -56,8 +56,10 @@ class MyFrame extends JFrame  {
  * Not having private members/fields is considered bad mainly because you 
  * lose control over who can change the value and what happens when the value 
  * changes
-
-You can perhaps think of objects of the same class as being like twins who share everything with each other, but who will keep most things hidden from everyone else
+ * 
+ * You can perhaps think of objects of the same class as being like twins who 
+ * share everything with each other, but who will keep most things hidden from 
+ * everyone else
  */
 public class JFrameTest3 {
 	private static void constructGUI() {
